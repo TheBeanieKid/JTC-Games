@@ -22,6 +22,7 @@ namespace JTC_Games_1
         public LoginDetailsWrong()
         {
             InitializeComponent();
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

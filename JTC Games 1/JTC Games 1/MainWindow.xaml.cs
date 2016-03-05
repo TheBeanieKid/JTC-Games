@@ -53,10 +53,10 @@ namespace JTC_Games_1
                 usernameCorrect = true;
                 passwordCorrect = true;
             }
-                       
+
             if (usernameCorrect == true && passwordCorrect == true)
             {
-                
+
                 MainGameWindow mainGameWindow = new MainGameWindow();
                 mainGameWindow.Show();
                 this.Close();
@@ -64,8 +64,27 @@ namespace JTC_Games_1
             }
             else
             {
-                LoginDetailsWrong loginWrongWindow = new LoginDetailsWrong();
-                loginWrongWindow.Show();
+                //Testing if it's false each time...
+                bool isWindowOpen = false;
+
+                //For each Window in the current list of Windows then...
+                foreach (Window theWindow in Application.Current.Windows)
+                {
+                    //...if the variable theWindow is the LoginDetailsWrong window then...
+                    if (theWindow is LoginDetailsWrong)
+                    {
+                        isWindowOpen = true;
+                        theWindow.Activate();
+                    }
+                }
+                //LoginDetailsWrong window doesn't exist!
+                //Make one...
+                if (!isWindowOpen)
+                {
+                    LoginDetailsWrong newWindow = new LoginDetailsWrong();
+                    newWindow.Show();
+                }
+
             }
         }
     }
