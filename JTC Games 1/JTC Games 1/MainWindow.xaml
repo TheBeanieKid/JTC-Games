@@ -5,9 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JTC_Games_1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button x:Name="button" Content="Exit" HorizontalAlignment="Left" Margin="85,110,0,0" VerticalAlignment="Top" Width="356" Click="button_Click" Height="95"/>
-
+        Title="LOGIN" Height="350" Width="525">
+    <Grid Background="Black">
+        <Button x:Name="LOGIN" Content="LOGIN" HorizontalAlignment="Left" Margin="345,220,0,0" VerticalAlignment="Top" Width="131" Height="35" Background="#FF73ABCB" FontSize="18.667" Click="LOGIN_Click"/>
+        <Button x:Name="EXIT" Content="EXIT" HorizontalAlignment="Left" Margin="210,220,0,0" VerticalAlignment="Top" Width="130" Height="35" Background="#FFC76B6B" FontSize="18.667" Click="EXIT_Click"/>
+        <TextBlock x:Name="USERNAME" HorizontalAlignment="Left" Margin="126,97,0,0" TextWrapping="Wrap" Text="USERNAME :" VerticalAlignment="Top" Height="20" Width="109" FontSize="16" Background="Black" Foreground="Red"/>
+        <TextBlock x:Name="PASSWORD" HorizontalAlignment="Left" Margin="126,135,0,0" TextWrapping="Wrap" Text="PASSWORD :" VerticalAlignment="Top" Height="20" Width="109" FontSize="16" Background="Black" Foreground="Red"/>
+        <TextBox x:Name="USERNAME_INPUT" HorizontalAlignment="Left" Height="23" Margin="255,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF73ABCB"/>
+        <TextBox x:Name="PASSWORD_INPUT" HorizontalAlignment="Left" Height="23" Margin="255,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF73ABCB" Foreground="#FF73ABCB"/>
+        <TextBlock x:Name="HEADING" HorizontalAlignment="Left" Height="82" Margin="30,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Foreground="#FF001495" FontSize="24" TextAlignment="Center"><Run Text="PLEASE ENTER YOUR DESIGNATED LOGIN "/><Run Text="      "/><Run Text="DETAILS TO ACCESS THIS GAME"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="OTHERTEXT" HorizontalAlignment="Left" Height="88" Margin="20,204,0,0" TextWrapping="Wrap" Text="Please contact the builders of this game if you would like to register and play" VerticalAlignment="Top" Width="155" Foreground="Red" TextAlignment="Center" FontSize="14.667"/>
     </Grid>
 </Window>

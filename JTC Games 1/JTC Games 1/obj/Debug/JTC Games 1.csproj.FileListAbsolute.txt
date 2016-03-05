@@ -13,3 +13,20 @@ D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC_Games_1.Properties.Res
 D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.csproj.GenerateResource.Cache
 D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.exe
 D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.pdb
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\bin\Debug\JTC Games 1.exe
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\bin\Debug\JTC Games 1.pdb
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.csprojResolveAssemblyReference.cache
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\MainWindow.g.cs
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\App.g.cs
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1_MarkupCompile.cache
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1_MarkupCompile.lref
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\MainWindow.baml
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.g.resources
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC_Games_1.Properties.Resources.resources
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.csproj.GenerateResource.Cache
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.exe
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.pdb
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\LoginDetailsWrong.g.cs
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\LoginDetailsWrong.baml
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\MainGameWindow.g.cs
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\MainGameWindow.baml

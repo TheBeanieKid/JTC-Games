@@ -20,14 +20,53 @@ namespace JTC_Games_1
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public static String jacksUsername = "jack123";
+        public static String jacksPassword = "tigers123";
+
+        public static String lachysUsername = "lachy123";
+        public static String lachysPassword = "fat";
+
+        public static bool usernameCorrect = false;
+        public static bool passwordCorrect = false;
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void EXIT_Click(object sender, RoutedEventArgs e)
         {
-            button.Foreground = Brushes.Yellow;
+            this.Close();
+        }
+
+        private void LOGIN_Click(object sender, RoutedEventArgs e)
+        {
+
+            if(USERNAME_INPUT.Text == jacksUsername && PASSWORD_INPUT.Text == jacksPassword)
+            {
+                usernameCorrect = true;
+                passwordCorrect = true;
+
+            }else if(USERNAME_INPUT.Text == lachysUsername && PASSWORD_INPUT.Text == lachysPassword)
+            {
+                usernameCorrect = true;
+                passwordCorrect = true;
+            }
+                       
+            if (usernameCorrect == true && passwordCorrect == true)
+            {
+                
+                MainGameWindow mainGameWindow = new MainGameWindow();
+                mainGameWindow.Show();
+                this.Close();
+
+            }
+            else
+            {
+                LoginDetailsWrong loginWrongWindow = new LoginDetailsWrong();
+                loginWrongWindow.Show();
+            }
         }
     }
 }
