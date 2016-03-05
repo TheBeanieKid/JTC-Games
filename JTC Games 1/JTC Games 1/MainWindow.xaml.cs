@@ -27,7 +27,7 @@ namespace JTC_Games_1
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            button.Foreground = Brushes.Yellow;
         }
     }
 }

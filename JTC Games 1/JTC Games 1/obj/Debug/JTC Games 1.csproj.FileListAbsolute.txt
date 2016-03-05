@@ -1,1 +1,15 @@
 C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\bin\Debug\JTC Games 1.exe.config
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\bin\Debug\JTC Games 1.exe.config
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\bin\Debug\JTC Games 1.exe
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\bin\Debug\JTC Games 1.pdb
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.csprojResolveAssemblyReference.cache
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\MainWindow.g.cs
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\App.g.cs
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1_MarkupCompile.cache
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1_MarkupCompile.lref
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\MainWindow.baml
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.g.resources
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC_Games_1.Properties.Resources.resources
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.csproj.GenerateResource.Cache
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.exe
+D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\JTC Games 1.pdb
