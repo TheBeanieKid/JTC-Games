@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JTC_Games_1"
         mc:Ignorable="d"
-        Title="MainGameWindow" Height="700" Width="700">
+        Title="MainGameWindow" Height="750" Width="1370" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF1D1D1D" Offset="0"/>
+                <GradientStop Color="Red" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Deck" Content="Deck" HorizontalAlignment="Left" Margin="35,46,0,0" VerticalAlignment="Top" Width="390" Height="104" Background="#FFB0B04C" FontSize="48" FontFamily="Snap ITC"/>
+        <Button x:Name="Cards" Content="Cards" HorizontalAlignment="Left" Margin="35,217,0,0" VerticalAlignment="Top" Width="390" Height="104" Background="#FFB0B04C" FontSize="48" FontFamily="Snap ITC"/>
+        <Button x:Name="Map" Content="Map" HorizontalAlignment="Left" Margin="35,390,0,0" VerticalAlignment="Top" Width="390" Height="104" Background="#FFB0B04C" FontSize="48" FontFamily="Snap ITC"/>
+        <Button x:Name="Trophies" Content="Skills" HorizontalAlignment="Left" Margin="35,564,0,0" VerticalAlignment="Top" Width="390" Height="104" Background="#FFB0B04C" FontSize="48" FontFamily="Snap ITC"/>
+        <Button x:Name="Fight" Content="Fight" HorizontalAlignment="Left" Height="160" Margin="995,525,0,0" VerticalAlignment="Top" Width="335" Background="#FF151559" FontSize="80" FontFamily="Snap ITC"/>
+
     </Grid>
 </Window>
