@@ -19,7 +19,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Deck" Content="Deck" HorizontalAlignment="Left" Margin="35,46,0,0" VerticalAlignment="Top" Width="390" Height="104" Background="#FFB0B04C" FontSize="48" FontFamily="Snap ITC"/>
+        <Button x:Name="Deck" Content="Deck" HorizontalAlignment="Left" Margin="35,46,0,0" VerticalAlignment="Top" Width="390" Height="104" Background="#FFB0B04C" FontSize="48" FontFamily="Snap ITC" Click="Deck_Click"/>
         <Button x:Name="Cards" Content="Cards" HorizontalAlignment="Left" Margin="35,217,0,0" VerticalAlignment="Top" Width="390" Height="104" Background="#FFB0B04C" FontSize="48" FontFamily="Snap ITC"/>
         <Button x:Name="Map" Content="Map" HorizontalAlignment="Left" Margin="35,390,0,0" VerticalAlignment="Top" Width="390" Height="104" Background="#FFB0B04C" FontSize="48" FontFamily="Snap ITC"/>
         <Button x:Name="Trophies" Content="Skills" HorizontalAlignment="Left" Margin="35,564,0,0" VerticalAlignment="Top" Width="390" Height="104" Background="#FFB0B04C" FontSize="48" FontFamily="Snap ITC"/>

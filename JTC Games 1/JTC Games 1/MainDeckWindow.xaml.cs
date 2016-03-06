@@ -15,19 +15,13 @@ using System.Windows.Shapes;
 namespace JTC_Games_1
 {
     /// <summary>
-    /// Interaction logic for MainGameWindow.xaml
+    /// Interaction logic for MainDeckWindow.xaml
     /// </summary>
-    public partial class MainGameWindow : Window
+    public partial class MainDeckWindow : Window
     {
-        public MainGameWindow()
+        public MainDeckWindow()
         {
             InitializeComponent();
-        }
-
-        private void Deck_Click(object sender, RoutedEventArgs e)
-        {
-            MainDeckWindow deckWindow = new MainDeckWindow();
-            deckWindow.Show();
         }
     }
 }

@@ -59,6 +59,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MainDeckWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainGameWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -73,6 +77,9 @@
     </Compile>
     <Compile Include="LoginDetailsWrong.xaml.cs">
       <DependentUpon>LoginDetailsWrong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainDeckWindow.xaml.cs">
+      <DependentUpon>MainDeckWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainGameWindow.xaml.cs">
       <DependentUpon>MainGameWindow.xaml</DependentUpon>
