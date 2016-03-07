@@ -59,6 +59,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MainCardsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainDeckWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -77,6 +81,9 @@
     </Compile>
     <Compile Include="LoginDetailsWrong.xaml.cs">
       <DependentUpon>LoginDetailsWrong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainCardsWindow.xaml.cs">
+      <DependentUpon>MainCardsWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainDeckWindow.xaml.cs">
       <DependentUpon>MainDeckWindow.xaml</DependentUpon>
@@ -115,6 +122,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Evil_Clown_Card.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

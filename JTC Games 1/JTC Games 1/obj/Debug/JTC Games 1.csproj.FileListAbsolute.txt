@@ -38,3 +38,5 @@ C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\MainD
 C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\MainDeckWindow.baml
 D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\MainDeckWindow.g.cs
 D:\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\MainDeckWindow.baml
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\MainCardsWindow.g.cs
+C:\Users\Jack\Documents\GitHub\JTC-Games\JTC Games 1\JTC Games 1\obj\Debug\MainCardsWindow.baml
