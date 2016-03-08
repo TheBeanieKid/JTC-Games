@@ -6,16 +6,13 @@
         xmlns:local="clr-namespace:JTC_Games_1"
         mc:Ignorable="d"
         Title="MainGameWindow" Height="750" Width="1370" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Grid.Background>
+    <Canvas>
+        <Canvas.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="#FF04741D" Offset="0"/>
                 <GradientStop Color="#FF033C08" Offset="1"/>
             </LinearGradientBrush>
-        </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+        </Canvas.Background>
         <Rectangle Fill="#FF722929" HorizontalAlignment="Left" Height="235" Margin="325,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="817"/>
         <Button x:Name="LumberCamp" Content="Lumber &#xD;&#xA;Camp" HorizontalAlignment="Left" Margin="365,10,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE" FontSize="21.333" FontFamily="Snap ITC" MouseEnter="LumberCamp_MouseEnter" MouseLeave="LumberCamp_MouseLeave" Click="LumberCamp_Click"/>
         <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Left" Margin="365,115,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
@@ -85,5 +82,5 @@
         <Button x:Name="button_Copy63" Content="Button" HorizontalAlignment="Left" Margin="1147,553,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
         <Button x:Name="button_Copy64" Content="Button" HorizontalAlignment="Left" Margin="1042,553,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
 
-    </Grid>
+    </Canvas>
 </Window>
