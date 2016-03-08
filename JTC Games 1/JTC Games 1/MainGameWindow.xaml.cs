@@ -19,9 +19,33 @@ namespace JTC_Games_1
     /// </summary>
     public partial class MainGameWindow : Window
     {
+
         public MainGameWindow()
         {
             InitializeComponent();
+
+            LumberCampDetails.Text = " Details :\n\n Bulid Cost :   40 Wood\n\n Production/s :   1";
+            LumberCampDetails.Visibility = Visibility.Collapsed;
+        }
+
+        private void LumberCamp_MouseEnter(object sender, MouseEventArgs e)
+        {
+            LumberCampDetails.Visibility = Visibility.Visible;
+        }
+
+        private void LumberCamp_MouseLeave(object sender, MouseEventArgs e)
+        {
+            LumberCampDetails.Visibility = Visibility.Collapsed;
+        }
+
+        private void LumberCamp_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Rect_1.Fill = new SolidColorBrush(Colors.Red);
         }
     }
 }

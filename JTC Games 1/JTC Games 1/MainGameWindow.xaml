@@ -9,55 +9,81 @@
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FF00B629" Offset="0"/>
-                <GradientStop Color="#FF04610C" Offset="1"/>
+                <GradientStop Color="#FF04741D" Offset="0"/>
+                <GradientStop Color="#FF033C08" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="115,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="115,115,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="10,115,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="10,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="115,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="220,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="220,115,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="220,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="585,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="480,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="480,325,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="585,325,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="795,325,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="690,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1042,395,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1147,395,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1147,500,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1042,500,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1042,605,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1147,605,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1252,605,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1252,500,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1252,395,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="10,503,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="115,503,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="115,608,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="10,608,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1147,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1252,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1252,115,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="1147,115,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="585,503,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="585,608,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="690,608,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="690,503,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="210,370,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="315,370,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="690,325,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="795,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="900,325,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="900,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle Fill="#FF722929" HorizontalAlignment="Left" Height="235" Margin="325,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="817"/>
+        <Button x:Name="LumberCamp" Content="Lumber &#xD;&#xA;Camp" HorizontalAlignment="Left" Margin="365,10,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE" FontSize="21.333" FontFamily="Snap ITC" MouseEnter="LumberCamp_MouseEnter" MouseLeave="LumberCamp_MouseLeave" Click="LumberCamp_Click"/>
+        <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Left" Margin="365,115,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <Button x:Name="button_Copy1" Content="Button" HorizontalAlignment="Left" Margin="470,10,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <Button x:Name="button_Copy2" Content="" HorizontalAlignment="Left" Margin="470,115,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <Button x:Name="button_Copy3" Content="Button" HorizontalAlignment="Left" Margin="575,115,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <Button x:Name="button_Copy4" Content="Button" HorizontalAlignment="Left" Margin="575,10,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <Button x:Name="button_Copy5" Content="Button" HorizontalAlignment="Left" Margin="680,10,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <Button x:Name="button_Copy6" Content="Button" HorizontalAlignment="Left" Margin="680,115,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <Button x:Name="button_Copy7" Content="Button" HorizontalAlignment="Left" Margin="785,115,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <Button x:Name="button_Copy8" Content="Button" HorizontalAlignment="Left" Margin="785,10,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <Button x:Name="button_Copy9" Content="Button" HorizontalAlignment="Left" Margin="890,10,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <Button x:Name="button_Copy10" Content="Button" HorizontalAlignment="Left" Margin="890,115,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <Button x:Name="button_Copy11" Content="Button" HorizontalAlignment="Left" Margin="995,10,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <Button x:Name="button_Copy12" Content="Button" HorizontalAlignment="Left" Margin="995,115,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF4F4FAE"/>
+        <TextBlock x:Name="LumberCampDetails" HorizontalAlignment="Left" Margin="220,503,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="205" Width="360" FontSize="21.333" Foreground="#FF856767" Background="Black"/>
+        <Button x:Name="button_Copy13" Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy14" Content="Button" HorizontalAlignment="Left" Margin="115,10,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy15" Content="Button" HorizontalAlignment="Left" Margin="220,10,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy16" Content="Button" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy17" Content="Button" HorizontalAlignment="Left" Margin="115,115,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy18" Content="Button" HorizontalAlignment="Left" Margin="220,115,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy19" Content="Button" HorizontalAlignment="Left" Margin="220,220,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy20" Content="Button" HorizontalAlignment="Left" Margin="115,220,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy21" Content="Button" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy22" Content="Button" HorizontalAlignment="Left" Margin="1042,238,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy23" Content="Button" HorizontalAlignment="Left" Margin="1147,238,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy24" Content="Button" HorizontalAlignment="Left" Margin="1252,238,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy25" Content="Button" HorizontalAlignment="Left" Margin="1042,343,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy26" Content="Button" HorizontalAlignment="Left" Margin="1147,343,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy27" Content="Button" HorizontalAlignment="Left" Margin="1252,343,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy28" Content="Button" HorizontalAlignment="Left" Margin="1252,448,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy29" Content="Button" HorizontalAlignment="Left" Margin="1147,448,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy30" Content="Button" HorizontalAlignment="Left" Margin="1042,448,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy31" Content="Button" HorizontalAlignment="Left" Margin="585,503,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy32" Content="Button" HorizontalAlignment="Left" Margin="690,503,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy33" Content="Button" HorizontalAlignment="Left" Margin="690,608,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy34" Content="Button" HorizontalAlignment="Left" Margin="585,608,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy35" Content="Button" HorizontalAlignment="Left" Margin="795,503,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy36" Content="Button" HorizontalAlignment="Left" Margin="900,503,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy37" Content="Button" HorizontalAlignment="Left" Margin="900,608,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy38" Content="Button" HorizontalAlignment="Left" Margin="795,608,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy40" Content="Button" HorizontalAlignment="Left" Margin="470,265,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy41" Content="Button" HorizontalAlignment="Left" Margin="470,370,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy43" Content="Button" HorizontalAlignment="Left" Margin="575,265,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy44" Content="Button" HorizontalAlignment="Left" Margin="680,265,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy45" Content="Button" HorizontalAlignment="Left" Margin="680,370,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy46" Content="Button" HorizontalAlignment="Left" Margin="575,370,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy47" Content="Button" HorizontalAlignment="Left" Margin="785,370,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy48" Content="Button" HorizontalAlignment="Left" Margin="785,265,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy49" Content="Button" HorizontalAlignment="Left" Margin="890,265,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy50" Content="Button" HorizontalAlignment="Left" Margin="890,370,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy39" Content="Button" HorizontalAlignment="Left" Margin="1147,133,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy42" Content="Button" HorizontalAlignment="Left" Margin="1252,133,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy51" Content="Button" HorizontalAlignment="Left" Margin="1147,28,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy52" Content="Button" HorizontalAlignment="Left" Margin="1252,28,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy53" Content="Button" HorizontalAlignment="Left" Margin="365,265,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy54" Content="Button" HorizontalAlignment="Left" Margin="365,370,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy55" Content="Button" HorizontalAlignment="Left" Margin="115,503,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy56" Content="Button" HorizontalAlignment="Left" Margin="10,503,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy57" Content="Button" HorizontalAlignment="Left" Margin="115,608,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy58" Content="Button" HorizontalAlignment="Left" Margin="10,608,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy59" Content="Button" HorizontalAlignment="Left" Margin="220,325,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy60" Content="Button" HorizontalAlignment="Left" Margin="115,325,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy61" Content="Button" HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy62" Content="Button" HorizontalAlignment="Left" Margin="1252,553,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy63" Content="Button" HorizontalAlignment="Left" Margin="1147,553,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
+        <Button x:Name="button_Copy64" Content="Button" HorizontalAlignment="Left" Margin="1042,553,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF666666"/>
 
     </Grid>
 </Window>
