@@ -8,11 +8,12 @@
         Title="LoginDetailsWrong" Height="180" Width="200">
     <Grid Background="#FF1A316C">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="10*"/>
             <ColumnDefinition Width="7"/>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Your Login Details seem to be wrong. Please check with the builders of this game is register and play" VerticalAlignment="Top" Height="118" Width="192" TextAlignment="Center" Margin="0,10,0,-10" Foreground="Red" Grid.ColumnSpan="2"/>
-        <Button x:Name="button" Content="Close" HorizontalAlignment="Left" Margin="35,95,0,0" VerticalAlignment="Top" Width="124" Height="33" Background="Black" Foreground="#FF8266DE" Click="button_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="118" Width="192" TextAlignment="Center" Margin="0,10,0,0" Foreground="Red" Grid.ColumnSpan="3"><Run Text="Your Login Details seem to be wrong. Please check with the builders of this game "/><Run Text="to"/><Run Text=" register and play"/></TextBlock>
+        <Button x:Name="button" Content="Try Again" HorizontalAlignment="Left" Margin="35,95,0,0" VerticalAlignment="Top" Width="124" Height="33" Background="Black" Foreground="#FF8266DE" Click="button_Click" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

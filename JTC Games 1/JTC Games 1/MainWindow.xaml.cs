@@ -27,11 +27,17 @@ namespace JTC_Games_1
         public static String lachysUsername = "lachy123";
         public static String lachysPassword = "fat";
 
+        public static String tomsUsername = "tom3912";
+        public static String tomsPassword = "clarke18";
+
         public static bool usernameCorrect = false;
         public static bool passwordCorrect = false;
 
         public MainWindow()
         {
+            MainGameWindow mainGameWindow = new MainGameWindow();
+            mainGameWindow.Show();
+            this.Close();
             InitializeComponent();
         }
 
@@ -43,15 +49,22 @@ namespace JTC_Games_1
         private void LOGIN_Click(object sender, RoutedEventArgs e)
         {
 
-            if(USERNAME_INPUT.Text == jacksUsername && PASSWORD_INPUT.Text == jacksPassword)
+            if (USERNAME_INPUT.Text == jacksUsername && PASSWORD_INPUT.Text == jacksPassword)
             {
                 usernameCorrect = true;
                 passwordCorrect = true;
 
-            }else if(USERNAME_INPUT.Text == lachysUsername && PASSWORD_INPUT.Text == lachysPassword)
+            }
+            else if (USERNAME_INPUT.Text == lachysUsername && PASSWORD_INPUT.Text == lachysPassword)
             {
                 usernameCorrect = true;
                 passwordCorrect = true;
+            }
+            else if (USERNAME_INPUT.Text == tomsUsername && PASSWORD_INPUT.Text == tomsPassword)
+            {
+                usernameCorrect = true;
+                passwordCorrect = true;
+
             }
 
             if (usernameCorrect == true && passwordCorrect == true)
