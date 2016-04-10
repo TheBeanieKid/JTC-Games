@@ -19,9 +19,26 @@ namespace JTC_Games_1
     /// </summary>
     public partial class TownNavigation : Window
     {
+
+        public static int number = 4;
+
         public TownNavigation()
         {
             InitializeComponent();
+
+            _1.Text = "" + number;
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window.GetType() == typeof(MainGameWindow))
+                {                    
+                    this.Hide();
+                    (window as MainGameWindow).Show();
+                }
+            }           
         }
     }
 }

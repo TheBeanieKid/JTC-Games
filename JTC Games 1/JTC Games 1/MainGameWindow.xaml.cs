@@ -18,6 +18,8 @@ namespace JTC_Games_1
     public partial class MainGameWindow : Window
     {
 
+        public bool isWindowHidden = false;
+
         public static bool _1Selected = false;
         public static bool _2Selected = false;
         public static bool _3Selected = false;
@@ -31,40 +33,75 @@ namespace JTC_Games_1
         public static bool _11Selected = false;
         public static bool _12Selected = false;
 
+        public static bool _1GrassSelected = false;
+        public static bool _2GrassSelected = false;
+        public static bool _3GrassSelected = false;
+        public static bool _4GrassSelected = false;
+        public static bool _5GrassSelected = false;
+        public static bool _6GrassSelected = false;
+        public static bool _7GrassSelected = false;
+        public static bool _8GrassSelected = false;
+        public static bool _9GrassSelected = false;
+        public static bool _10GrassSelected = false;
+        public static bool _11GrassSelected = false;
+
         public static int NumberOfLumberCamps = 0;
-        public static int currentLumber = 850;
-        public static int lumberCampCostWood = 250;
-        public static int lumberCampCostWorkers = 10;
+        public static int currentLumber = 2000;
+        public static int lumberCampCostWood = 0;
+        public static int lumberCampCostWorkers = 0;
+
+        //850 wood
+        //10 workers
 
         public static int NumberOfStoneCamps = 0;
         public static int currentStone = 25;
-        public static int stoneCampCostWood = 250;
-        public static int stoneCampCostWorkers = 30;
+        public static int stoneCampCostWood = 0;
+        public static int stoneCampCostWorkers = 0;
+
+        //250 wood
+        //30 workers
 
         public static int NumberOfIronCamps = 0;
         public static int currentIron = 50;
-        public static int ironCampCostStone = 35;
-        public static int ironCampCostWorkers = 25;
+        public static int ironCampCostStone = 0;
+        public static int ironCampCostWorkers = 0;
+        
+        //35 stone 
+        //25 workers 
 
         public static int NumberOfGoldCamps = 0;
         public static int currentGold = 20;
-        public static int goldCampCostIron = 120;
-        public static int goldCampCostWorkers = 40;
+        public static int goldCampCostIron = 0;
+        public static int goldCampCostWorkers = 0;
+
+        //120 iron
+        //40 workers
 
         public static int NumberOfFoodCamps = 0;
         public static int currentFood = 125;
-        public static int foodCampCostWood = 100;
-        public static int foodCampCostWorkers = 20;
+        public static int foodCampCostWood = 0;
+        public static int foodCampCostWorkers = 0;
+
+        //100 food
+        //20 workers
 
         public static int NumberOfWaterCamps = 0;
         public static int currentWater = 20;
-        public static int waterCampCostWood = 85;
-        public static int waterCampCostWorkers = 12;
+        public static int waterCampCostWood = 0;
+        public static int waterCampCostWorkers = 0;
+
+        //85 wood
+        //12 workers
 
         public static int NumberOfWorkers = 0;
         public static int currentWorkers = 30;
-        public static int workersCampCostWood = 300;
-        public static int workersCampCostFood = 20;
+        public static int workersCampCostWood = 0;
+        public static int workersCampCostFood = 0;
+
+        //300 wood
+        //20 food
+
+        public TownNavigation townPage = new TownNavigation();
 
 
         public MainGameWindow()
@@ -155,6 +192,8 @@ namespace JTC_Games_1
             CurrentFoodCount.Text = "" + currentFood;
             CurrentWaterCount.Text = "" + currentWater;
             CurrentWorkersCount.Text = "" + currentWorkers;
+            
+            townPage.Hide();
         }
 
 
@@ -293,6 +332,23 @@ namespace JTC_Games_1
             Build_6.Visibility = Visibility.Visible;
             Build_7.Visibility = Visibility.Visible;
         }
+
+        private void GrassBuildVisible()
+        {
+            blackText.Visibility = Visibility.Visible;
+            Build_8.Visibility = Visibility.Visible;
+            Build_9.Visibility = Visibility.Visible;
+            Build_10.Visibility = Visibility.Visible;
+            Build_11.Visibility = Visibility.Visible;
+            Build_12.Visibility = Visibility.Visible;
+            Build_13.Visibility = Visibility.Visible;
+            Build_14.Visibility = Visibility.Visible;
+            Build_15.Visibility = Visibility.Visible;
+            Build_16.Visibility = Visibility.Visible;
+            Build_17.Visibility = Visibility.Visible;
+            Build_18.Visibility = Visibility.Visible;
+        }
+
         private void BuildHidden()
         {
             Build_1.Visibility = Visibility.Collapsed;
@@ -307,6 +363,13 @@ namespace JTC_Games_1
             Build_10.Visibility = Visibility.Collapsed;
             Build_11.Visibility = Visibility.Collapsed;
             Build_12.Visibility = Visibility.Collapsed;
+            Build_13.Visibility = Visibility.Collapsed;
+            Build_14.Visibility = Visibility.Collapsed;
+            Build_15.Visibility = Visibility.Collapsed;
+            Build_16.Visibility = Visibility.Collapsed;
+            Build_17.Visibility = Visibility.Collapsed;
+            Build_18.Visibility = Visibility.Collapsed;
+            Build_19.Visibility = Visibility.Collapsed;
         }
 
         private void Canvas_MouseDown(object sender, MouseButtonEventArgs e)
@@ -336,6 +399,18 @@ namespace JTC_Games_1
             _10Selected = false;
             _11Selected = false;
             _12Selected = false;
+
+            _1GrassSelected = false;
+            _2GrassSelected = false;
+            _3GrassSelected = false;
+            _4GrassSelected = false;
+            _5GrassSelected = false;
+            _6GrassSelected = false;
+            _7GrassSelected = false;
+            _8GrassSelected = false;
+            _9GrassSelected = false;
+            _10GrassSelected = false;
+            _11GrassSelected = false;
             currentSelected = true;
         }
         private void SelectedAllFalse()
@@ -559,6 +634,75 @@ namespace JTC_Games_1
             blackText.Text = " Build :";
         }
 
+        private void _1Grass_Click(object sender, RoutedEventArgs e)
+        {
+            _1GrassSelected = true;
+            GrassBuildVisible();
+            blackText.Text = " Build :";
+        }
+        private void _2Grass_Click(object sender, RoutedEventArgs e)
+        {
+            SelectedFalse(_2GrassSelected);
+            GrassBuildVisible();
+            blackText.Text = " Build :";
+        }
+        private void _3Grass_Click(object sender, RoutedEventArgs e)
+        {
+            SelectedFalse(_3GrassSelected);
+            GrassBuildVisible();
+            blackText.Text = " Build :";
+        }
+        private void _4Grass_Click(object sender, RoutedEventArgs e)
+        {
+            SelectedFalse(_4GrassSelected);
+            GrassBuildVisible();
+            blackText.Text = " Build :";
+        }
+        private void _5Grass_Click(object sender, RoutedEventArgs e)
+        {
+            SelectedFalse(_5GrassSelected);
+            GrassBuildVisible();
+            blackText.Text = " Build :";
+        }
+        private void _6Grass_Click(object sender, RoutedEventArgs e)
+        {
+            SelectedFalse(_6GrassSelected);
+            GrassBuildVisible();
+            blackText.Text = " Build :";
+        }
+        private void _7Grass_Click(object sender, RoutedEventArgs e)
+        {
+            SelectedFalse(_7GrassSelected);
+            GrassBuildVisible();
+            blackText.Text = " Build :";
+        }
+        private void _8Grass_Click(object sender, RoutedEventArgs e)
+        {
+            SelectedFalse(_8GrassSelected);
+            GrassBuildVisible();
+            blackText.Text = " Build :";
+        }
+        private void _9Grass_Click(object sender, RoutedEventArgs e)
+        {
+            SelectedFalse(_9GrassSelected);
+            GrassBuildVisible();
+            blackText.Text = " Build :";
+        }
+        private void _10Grass_Click(object sender, RoutedEventArgs e)
+        {
+            SelectedFalse(_10GrassSelected);
+            GrassBuildVisible();
+            blackText.Text = " Build :";
+        }
+        private void _11Grass_Click(object sender, RoutedEventArgs e)
+        {
+            SelectedFalse(_11GrassSelected);
+            GrassBuildVisible();
+            blackText.Text = " Build :";
+        }
+
+
+
         private void Build_1_Click(object sender, RoutedEventArgs e)
         {
 
@@ -690,7 +834,7 @@ namespace JTC_Games_1
                     if (_1Selected == true)
                     {
                         _1.Content = "Stone Camp";
-                        _1.Background = Brushes.DarkGray;
+                        _1.Background = Brushes.Gray;
                         _1Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -698,7 +842,7 @@ namespace JTC_Games_1
                     else if (_2Selected == true)
                     {
                         _2.Content = "Stone Camp";
-                        _2.Background = Brushes.DarkGray;
+                        _2.Background = Brushes.Gray;
                         _2Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -706,7 +850,7 @@ namespace JTC_Games_1
                     else if (_3Selected == true)
                     {
                         _3.Content = "Stone Camp";
-                        _3.Background = Brushes.DarkGray;
+                        _3.Background = Brushes.Gray;
                         _3Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -714,7 +858,7 @@ namespace JTC_Games_1
                     else if (_4Selected == true)
                     {
                         _4.Content = "Stone Camp";
-                        _4.Background = Brushes.DarkGray;
+                        _4.Background = Brushes.Gray;
                         _4Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -722,7 +866,7 @@ namespace JTC_Games_1
                     else if (_5Selected == true)
                     {
                         _5.Content = "Stone Camp";
-                        _5.Background = Brushes.DarkGray;
+                        _5.Background = Brushes.Gray;
                         _5Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -730,7 +874,7 @@ namespace JTC_Games_1
                     else if (_6Selected == true)
                     {
                         _6.Content = "Stone Camp";
-                        _6.Background = Brushes.DarkGray;
+                        _6.Background = Brushes.Gray;
                         _6Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -738,7 +882,7 @@ namespace JTC_Games_1
                     else if (_7Selected == true)
                     {
                         _7.Content = "Stone Camp";
-                        _7.Background = Brushes.DarkGray;
+                        _7.Background = Brushes.Gray;
                         _7Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -746,7 +890,7 @@ namespace JTC_Games_1
                     else if (_8Selected == true)
                     {
                         _8.Content = "Stone Camp";
-                        _8.Background = Brushes.DarkGray;
+                        _8.Background = Brushes.Gray;
                         _8Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -754,7 +898,7 @@ namespace JTC_Games_1
                     else if (_9Selected == true)
                     {
                         _9.Content = "Stone Camp";
-                        _9.Background = Brushes.DarkGray;
+                        _9.Background = Brushes.Gray;
                         _9Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -762,7 +906,7 @@ namespace JTC_Games_1
                     else if (_10Selected == true)
                     {
                         _10.Content = "Stone Camp";
-                        _10.Background = Brushes.DarkGray;
+                        _10.Background = Brushes.Gray;
                         _10Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -770,7 +914,7 @@ namespace JTC_Games_1
                     else if (_11Selected == true)
                     {
                         _11.Content = "Stone Camp";
-                        _11.Background = Brushes.DarkGray;
+                        _11.Background = Brushes.Gray;
                         _11Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -778,7 +922,7 @@ namespace JTC_Games_1
                     else if (_12Selected == true)
                     {
                         _12.Content = "Stone Camp";
-                        _12.Background = Brushes.DarkGray;
+                        _12.Background = Brushes.Gray;
                         _12Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -805,6 +949,7 @@ namespace JTC_Games_1
                     if (_1Selected == true)
                     {
                         _1.Content = "Iron Camp";
+                        _1.Background = Brushes.LightGray;
                         _1Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -812,6 +957,7 @@ namespace JTC_Games_1
                     else if (_2Selected == true)
                     {
                         _2.Content = "Iron Camp";
+                        _2.Background = Brushes.LightGray;
                         _2Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -819,6 +965,7 @@ namespace JTC_Games_1
                     else if (_3Selected == true)
                     {
                         _3.Content = "Iron Camp";
+                        _3.Background = Brushes.LightGray;
                         _3Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -826,6 +973,7 @@ namespace JTC_Games_1
                     else if (_4Selected == true)
                     {
                         _4.Content = "Iron Camp";
+                        _4.Background = Brushes.LightGray;
                         _4Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -833,6 +981,7 @@ namespace JTC_Games_1
                     else if (_5Selected == true)
                     {
                         _5.Content = "Iron Camp";
+                        _5.Background = Brushes.LightGray;
                         _5Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -840,6 +989,7 @@ namespace JTC_Games_1
                     else if (_6Selected == true)
                     {
                         _6.Content = "Iron Camp";
+                        _6.Background = Brushes.LightGray;
                         _6Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -847,6 +997,7 @@ namespace JTC_Games_1
                     else if (_7Selected == true)
                     {
                         _7.Content = "Iron Camp";
+                        _7.Background = Brushes.LightGray;
                         _7Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -854,6 +1005,7 @@ namespace JTC_Games_1
                     else if (_8Selected == true)
                     {
                         _8.Content = "Iron Camp";
+                        _8.Background = Brushes.LightGray;
                         _8Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -861,6 +1013,7 @@ namespace JTC_Games_1
                     else if (_9Selected == true)
                     {
                         _9.Content = "Iron Camp";
+                        _9.Background = Brushes.LightGray;
                         _9Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -868,6 +1021,7 @@ namespace JTC_Games_1
                     else if (_10Selected == true)
                     {
                         _10.Content = "Iron Camp";
+                        _10.Background = Brushes.LightGray;
                         _10Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -875,6 +1029,7 @@ namespace JTC_Games_1
                     else if (_11Selected == true)
                     {
                         _11.Content = "Iron Camp";
+                        _11.Background = Brushes.LightGray;
                         _11Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -882,6 +1037,7 @@ namespace JTC_Games_1
                     else if (_12Selected == true)
                     {
                         _12.Content = "Iron Camp";
+                        _12.Background = Brushes.LightGray;
                         _12Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -908,6 +1064,7 @@ namespace JTC_Games_1
                     if (_1Selected == true)
                     {
                         _1.Content = "Gold Camp";
+                        _1.Background = Brushes.Goldenrod;
                         _1Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -915,6 +1072,7 @@ namespace JTC_Games_1
                     else if (_2Selected == true)
                     {
                         _2.Content = "Gold Camp";
+                        _2.Background = Brushes.Goldenrod;
                         _2Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -922,6 +1080,7 @@ namespace JTC_Games_1
                     else if (_3Selected == true)
                     {
                         _3.Content = "Gold Camp";
+                        _3.Background = Brushes.Goldenrod;
                         _3Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -929,6 +1088,7 @@ namespace JTC_Games_1
                     else if (_4Selected == true)
                     {
                         _4.Content = "Gold Camp";
+                        _4.Background = Brushes.Goldenrod;
                         _4Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -936,6 +1096,7 @@ namespace JTC_Games_1
                     else if (_5Selected == true)
                     {
                         _5.Content = "Gold Camp";
+                        _5.Background = Brushes.Goldenrod;
                         _5Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -943,6 +1104,7 @@ namespace JTC_Games_1
                     else if (_6Selected == true)
                     {
                         _6.Content = "Gold Camp";
+                        _6.Background = Brushes.Goldenrod;
                         _6Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -950,6 +1112,7 @@ namespace JTC_Games_1
                     else if (_7Selected == true)
                     {
                         _7.Content = "Gold Camp";
+                        _7.Background = Brushes.Goldenrod;
                         _7Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -957,6 +1120,7 @@ namespace JTC_Games_1
                     else if (_8Selected == true)
                     {
                         _8.Content = "Gold Camp";
+                        _8.Background = Brushes.Goldenrod;
                         _8Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -964,6 +1128,7 @@ namespace JTC_Games_1
                     else if (_9Selected == true)
                     {
                         _9.Content = "Gold Camp";
+                        _9.Background = Brushes.Goldenrod;
                         _9Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -971,6 +1136,7 @@ namespace JTC_Games_1
                     else if (_10Selected == true)
                     {
                         _10.Content = "Gold Camp";
+                        _10.Background = Brushes.Goldenrod;
                         _10Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -978,6 +1144,7 @@ namespace JTC_Games_1
                     else if (_11Selected == true)
                     {
                         _11.Content = "Gold Camp";
+                        _11.Background = Brushes.Goldenrod;
                         _11Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -985,6 +1152,7 @@ namespace JTC_Games_1
                     else if (_12Selected == true)
                     {
                         _12.Content = "Gold Camp";
+                        _12.Background = Brushes.Goldenrod;
                         _12Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1011,6 +1179,7 @@ namespace JTC_Games_1
                     if (_1Selected == true)
                     {
                         _1.Content = "Farm";
+                        _1.Background = Brushes.Yellow;
                         _1Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1018,6 +1187,7 @@ namespace JTC_Games_1
                     else if (_2Selected == true)
                     {
                         _2.Content = "Farm";
+                        _2.Background = Brushes.Yellow;
                         _2Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1025,6 +1195,7 @@ namespace JTC_Games_1
                     else if (_3Selected == true)
                     {
                         _3.Content = "Farm";
+                        _3.Background = Brushes.Yellow;
                         _3Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1032,6 +1203,7 @@ namespace JTC_Games_1
                     else if (_4Selected == true)
                     {
                         _4.Content = "Farm";
+                        _4.Background = Brushes.Yellow;
                         _4Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1039,6 +1211,7 @@ namespace JTC_Games_1
                     else if (_5Selected == true)
                     {
                         _5.Content = "Farm";
+                        _5.Background = Brushes.Yellow;
                         _5Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1046,6 +1219,7 @@ namespace JTC_Games_1
                     else if (_6Selected == true)
                     {
                         _6.Content = "Farm";
+                        _6.Background = Brushes.Yellow;
                         _6Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1053,6 +1227,7 @@ namespace JTC_Games_1
                     else if (_7Selected == true)
                     {
                         _7.Content = "Farm";
+                        _7.Background = Brushes.Yellow;
                         _7Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1060,6 +1235,7 @@ namespace JTC_Games_1
                     else if (_8Selected == true)
                     {
                         _8.Content = "Farm";
+                        _8.Background = Brushes.Yellow;
                         _8Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1067,6 +1243,7 @@ namespace JTC_Games_1
                     else if (_9Selected == true)
                     {
                         _9.Content = "Farm";
+                        _9.Background = Brushes.Yellow;
                         _9Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1074,6 +1251,7 @@ namespace JTC_Games_1
                     else if (_10Selected == true)
                     {
                         _10.Content = "Farm";
+                        _10.Background = Brushes.Yellow;
                         _10Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1081,6 +1259,7 @@ namespace JTC_Games_1
                     else if (_11Selected == true)
                     {
                         _11.Content = "Farm";
+                        _11.Background = Brushes.Yellow;
                         _11Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1088,6 +1267,7 @@ namespace JTC_Games_1
                     else if (_12Selected == true)
                     {
                         _12.Content = "Farm";
+                        _12.Background = Brushes.Yellow;
                         _12Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1114,6 +1294,7 @@ namespace JTC_Games_1
                     if (_1Selected == true)
                     {
                         _1.Content = "Water Mill";
+                        _1.Background = Brushes.DeepSkyBlue;
                         _1Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1121,6 +1302,7 @@ namespace JTC_Games_1
                     else if (_2Selected == true)
                     {
                         _2.Content = "Water Mill";
+                        _2.Background = Brushes.DeepSkyBlue;
                         _2Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1128,6 +1310,7 @@ namespace JTC_Games_1
                     else if (_3Selected == true)
                     {
                         _3.Content = "Water Mill";
+                        _3.Background = Brushes.DeepSkyBlue;
                         _3Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1135,6 +1318,7 @@ namespace JTC_Games_1
                     else if (_4Selected == true)
                     {
                         _4.Content = "Water Mill";
+                        _4.Background = Brushes.DeepSkyBlue;
                         _4Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1142,6 +1326,7 @@ namespace JTC_Games_1
                     else if (_5Selected == true)
                     {
                         _5.Content = "Water Mill";
+                        _5.Background = Brushes.DeepSkyBlue;
                         _5Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1149,6 +1334,7 @@ namespace JTC_Games_1
                     else if (_6Selected == true)
                     {
                         _6.Content = "Water Mill";
+                        _6.Background = Brushes.DeepSkyBlue;
                         _6Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1156,6 +1342,7 @@ namespace JTC_Games_1
                     else if (_7Selected == true)
                     {
                         _7.Content = "Water Mill";
+                        _7.Background = Brushes.DeepSkyBlue;
                         _7Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1163,6 +1350,7 @@ namespace JTC_Games_1
                     else if (_8Selected == true)
                     {
                         _8.Content = "Water Mill";
+                        _8.Background = Brushes.DeepSkyBlue;
                         _8Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1170,6 +1358,7 @@ namespace JTC_Games_1
                     else if (_9Selected == true)
                     {
                         _9.Content = "Water Mill";
+                        _9.Background = Brushes.DeepSkyBlue;
                         _9Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1177,6 +1366,7 @@ namespace JTC_Games_1
                     else if (_10Selected == true)
                     {
                         _10.Content = "Water Mill";
+                        _10.Background = Brushes.DeepSkyBlue;
                         _10Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1184,6 +1374,7 @@ namespace JTC_Games_1
                     else if (_11Selected == true)
                     {
                         _11.Content = "Water Mill";
+                        _11.Background = Brushes.DeepSkyBlue;
                         _11Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1191,6 +1382,7 @@ namespace JTC_Games_1
                     else if (_12Selected == true)
                     {
                         _12.Content = "Water Mill";
+                        _12.Background = Brushes.DeepSkyBlue;
                         _12Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1215,6 +1407,7 @@ namespace JTC_Games_1
                     if (_1Selected == true)
                     {
                         _1.Content = "Worker's Hut";
+                        _1.Background = Brushes.SandyBrown;
                         _1Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1222,6 +1415,7 @@ namespace JTC_Games_1
                     else if (_2Selected == true)
                     {
                         _2.Content = "Worker's Hut";
+                        _2.Background = Brushes.SandyBrown;
                         _2Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1229,6 +1423,7 @@ namespace JTC_Games_1
                     else if (_3Selected == true)
                     {
                         _3.Content = "Worker's Hut";
+                        _3.Background = Brushes.SandyBrown;
                         _3Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1236,6 +1431,7 @@ namespace JTC_Games_1
                     else if (_4Selected == true)
                     {
                         _4.Content = "Worker's Hut";
+                        _4.Background = Brushes.SandyBrown;
                         _4Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1243,6 +1439,7 @@ namespace JTC_Games_1
                     else if (_5Selected == true)
                     {
                         _5.Content = "Worker's Hut";
+                        _5.Background = Brushes.SandyBrown;
                         _5Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1250,6 +1447,7 @@ namespace JTC_Games_1
                     else if (_6Selected == true)
                     {
                         _6.Content = "Worker's Hut";
+                        _6.Background = Brushes.SandyBrown;
                         _6Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1257,6 +1455,7 @@ namespace JTC_Games_1
                     else if (_7Selected == true)
                     {
                         _7.Content = "Worker's Hut";
+                        _7.Background = Brushes.SandyBrown;
                         _7Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1264,6 +1463,7 @@ namespace JTC_Games_1
                     else if (_8Selected == true)
                     {
                         _8.Content = "Worker's Hut";
+                        _8.Background = Brushes.SandyBrown;
                         _8Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1271,6 +1471,7 @@ namespace JTC_Games_1
                     else if (_9Selected == true)
                     {
                         _9.Content = "Worker's Hut";
+                        _9.Background = Brushes.SandyBrown;
                         _9Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1278,6 +1479,7 @@ namespace JTC_Games_1
                     else if (_10Selected == true)
                     {
                         _10.Content = "Worker's Hut";
+                        _10.Background = Brushes.SandyBrown;
                         _10Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1285,6 +1487,7 @@ namespace JTC_Games_1
                     else if (_11Selected == true)
                     {
                         _11.Content = "Worker's Hut";
+                        _11.Background = Brushes.SandyBrown;
                         _11Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1292,6 +1495,7 @@ namespace JTC_Games_1
                     else if (_12Selected == true)
                     {
                         _12.Content = "Worker's Hut";
+                        _12.Background = Brushes.SandyBrown;
                         _12Selected = false;
                         BuildHidden();
                         blackText.Text = " Select a place to build";
@@ -1389,8 +1593,19 @@ namespace JTC_Games_1
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            TownNavigation townPage = new TownNavigation();
+            townPage.Owner = this;
             townPage.Show();
+            this.Hide();
+
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window.GetType() == typeof(TownNavigation))
+                {
+                    TownNavigation.number = 10;
+                    (window as TownNavigation).Show();
+                    
+                }
+            }
         }
     }
 }
