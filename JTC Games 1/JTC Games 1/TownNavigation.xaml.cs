@@ -26,7 +26,9 @@ namespace JTC_Games_1
         {
             InitializeComponent();
 
-            _1.Text = "" + number;
+            // Move it anywhere you want lol
+            // This is how you can pass fields from other classes...
+            _1.Text = "" + MainGameWindow.currentStone;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
